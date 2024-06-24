@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIKAY Store Inventory</title>
+    <!-- <link rel="stylesheet" href="inv.css"> -->
+    </head>
+	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.inventory {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	list-style: none;
+    padding: 20px;
+}
+
+.inventory section {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.inventory section h2 {
+    margin-top: 0;
+}
+
+.inventory section ul {
+    list-style: disc;
+    padding-left: 0;
+}
+
+.inventory section ul li {
+    padding: 5px 0;
+}
+
+.logo {
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.logo img {
+	border-radius: 50%;
+	height: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+}
+
+
+
+</style>	
+	
+	
+<body>
+    <div class="logo">
+    <img src="images/mylogo.jpg">
+  </div>
+  
+  <nav class="navbar">
+        <ul>
+            <li><a href="#jeans">Jeans</a></li>
+            <li><a href="#tops">Tops</a></li>
+            <li><a href="#shorts">Shorts</a></li>
+            <li><a href="#dress">Dress</a></li>
+			<li><a href="#shoes">Shoes</a></li>
+			<li><a href="index2.html">Inventory</a></li>
+        </ul>
+    </nav>
+<hr>
+    
+	<h2><center> JEANS </center></h2>
+    <div class="inventory">	
+	<div id="jeans" >
+		<div class="grid-container">
+        <div class="grid-item">
+    <img src="images/skinny.jpg" style= "width: 100px" "height: 100px" >
+    <h3><p>Skinny Jeans </p></h3>
+	</div>
+		<div class="grid-item">
+    <img src="images/bootcut.jpg" style= "width: 100px" "height: 100px" >
+    <h3><p>Bootcut Jeans</p></h3>	
+  </div>
+		<div class="grid-item">
+    <img src="images/wide.jpg" style= "width: 100px" "height: 250px" >
+     <h3><p>Wide-Leg Jeans</p></h3>
+  </div>
+		<div class="grid-item">
+   <img src="images/tattered.jpg" style= "width: 100px" "height: 100px" >
+     <h3><p>Tattered Jeans</p></h3>
+  </div>
+</div>
+<hr>   
+<hr>
+
+<h2><center> TOPS </center></h2>
+<div id="tops" >
+	<div class="grid-container">
+    <div class="grid-item">
+    <img src="images/tshirt.jpg" style= "width: 150px" "height: 150px" >
+    <h3><p>T-Shirts </p></h3>
+  </div>
+		<div class="grid-item">
+    <img src="images/blouse.jpg" style= "width: 150px" "height: 150px">
+    <h3><p>Blouses</p></h3>	
+  </div>
+		<div class="grid-item">
+    <img src="images/sweaters.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Sweaters</p></h3>
+  </div>
+		<div class="grid-item">
+   <img src="images/sleeveless.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Sleeveless</p></h3>
+  </div>
+</div>
+<hr>   
+<hr>
+
+<h2><center> SHORTS </center></h2>
+ <div id="shorts" >
+  <div class="grid-container">
+    <div class="grid-item">
+    <img src="images/denim.jpg" style= "width: 150px" "height: 150px" >
+    <h3><p>Denim Shorts </p></h3>
+  </div>
+   <div class="grid-item">
+    <img src="images/chino.jpg" style= "width: 150px" "height: 150px">
+    <h3><p>Chino Shorts</p></h3>	
+  </div>
+  <div class="grid-item">
+    <img src="images/bermuda.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Bermuda Shorts</p></h3>
+  </div>
+  <div class="grid-item">
+   <img src="images/trouser.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Trouser Shorts</p></h3>
+  </div>
+</div>
+<hr>       
+<hr>
+
+<h2><center> DRESS </center></h2>
+<div id="dress" >
+  <div class="grid-container">
+    <div class="grid-item">
+    <img src="images/maxi.jpg" style= "width: 150px" "height: 150px" >
+    <h3><p>Maxi Dress </p></h3>
+  </div>
+   <div class="grid-item">
+    <img src="images/midi.jpg" style= "width: 150px" "height: 150px">
+    <h3><p>Midi Dress</p></h3>	
+  </div>
+  <div class="grid-item">
+    <img src="images/mini.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Mini Dress</p></h3>
+  </div>
+  <div class="grid-item">
+   <img src="images/sexy.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Sexy Dress</p></h3>
+  </div>
+</div>
+<hr> 
+<hr> 
+ 
+ <h2><center> SHOES </center></h2>
+<div id="shoes" >
+  <div class="grid-container">
+    <div class="grid-item">
+    <img src="images/top.jpg" style= "width: 150px" "height: 150px" >
+    <h3><p>Top Sider </p></h3>
+  </div>
+   <div class="grid-item">
+    <img src="images/black.jpg" style= "width: 150px" "height: 150px">
+    <h3><p>Black Shoes</p></h3>	
+  </div>
+  <div class="grid-item">
+    <img src="images/run.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Running Shoes</p></h3>
+  </div>
+  <div class="grid-item">
+   <img src="images/combat.jpg" style= "width: 150px" "height: 150px">
+     <h3><p>Combat Shoes</p></h3>
+  </div>
+</div>
+<hr>   
+
+
+
+</body>
+</html>
